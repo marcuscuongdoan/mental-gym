@@ -67,12 +67,14 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <img className="background" src={background} alt="background" />
-      {ROOM_LIST.map(room => {
-        return <div id={room} key={room} className="selector" onMouseOver={roomSelect}></div>
-      })}
-      <img className="room" src={image} alt="background" />
+    <div className="container">
+      <div className="App">
+        <img className="background" src={background} alt="background" />
+        {ROOM_LIST.map(room => {
+          return <div id={room} key={room} className="selector" onMouseOver={roomSelect}></div>
+        })}
+        <img className="room" src={image} alt="background" />
+      </div>
     </div>
   );
 }
