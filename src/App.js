@@ -1,79 +1,69 @@
-import { useState } from 'react';
-import './App.css';
-import background from './assets/background.png';
-import art from './assets/art.png';
-import locker from './assets/locker.png';
-import lounge from './assets/lounge.png';
-import movement from './assets/movement.png';
-import smoothie from './assets/smoothie.png';
-import sound from './assets/sound.png';
-import spa from './assets/spa.png';
-import theatre from './assets/theatre.png';
-import write from './assets/write.png';
-import yoga from './assets/yoga.png';
+import './App.scss';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
+import { spring, AnimatedSwitch } from 'react-router-transition';
+import routes from './routes';
 
-const ROOMS = {
-  art: {
-    name: 'art',
-    img: art,
-  },
-  locker: {
-    name: 'locker',
-    img: locker,
-  },
-  lounge: {
-    name: 'lounge',
-    img: lounge,
-  },
-  movement: {
-    name: 'movement',
-    img: movement,
-  },
-  smoothie: {
-    name: 'smoothie',
-    img: smoothie,
-  },
-  sound: {
-    name: 'sound',
-    img: sound,
-  },
-  spa: {
-    name: 'spa',
-    img: spa,
-  },
-  theatre: {
-    name: 'theatre',
-    img: theatre,
-  },
-  write: {
-    name: 'write',
-    img: write,
-  },
-  yoga: {
-    name: 'yoga',
-    img: yoga,
-  },
-}
-
-const ROOM_LIST = ['art', 'locker', 'lounge', 'movement', 'smoothie', 'sound', 'spa', 'theatre', 'write', 'yoga']
+import goethe from "./assets/logos/goethe.png";
+import yogapod from "./assets/logos/yogapod.png";
 
 function App() {
-
-  const [image, setImage] = useState("");
-
-  const roomSelect = (event) => {
-    const room = ROOMS[event.target.id];
-    return setImage(room.img);
+  function mapStyles(styles) {
+    return {
+      opacity: styles.opacity,
+      transform: `scale(${styles.scale})`,
+    };
   }
 
+  // wrap the `spring` helper to use a bouncy config
+  function bounce(val) {
+    return spring(val, {
+      stiffness: 330,
+      damping: 22,
+    });
+  }
+
+  // child matches will...
+  const bounceTransition = {
+    // start in a transparent, upscaled state
+    atEnter: {
+      opacity: 0,
+      scale: 0.8,
+    },
+    // leave in a transparent, downscaled state
+    atLeave: {
+      opacity: bounce(0),
+      scale: bounce(2),
+    },
+    // and rest at an opaque, normally-scaled state
+    atActive: {
+      opacity: bounce(1),
+      scale: bounce(1),
+    },
+  };
+
   return (
-    <div className="container">
-      <div className="App">
-        <img className="background" src={background} alt="background" />
-        {ROOM_LIST.map(room => {
-          return <div id={room} key={room} className="selector" onMouseOver={roomSelect}></div>
-        })}
-        <img className="room" src={image} alt="background" />
+    <div className="App">
+      <Router>
+        <AnimatedSwitch
+          atEnter={bounceTransition.atEnter}
+          atLeave={bounceTransition.atLeave}
+          atActive={bounceTransition.atActive}
+          mapStyles={mapStyles}
+          className="route-wrapper"
+        >
+          {routes.map(route => (
+            <Route exact {...route} key={route.name}>
+            </Route>
+          ))}
+        </AnimatedSwitch>
+      </Router>
+      <div className="logo">
+        <img src={goethe} alt="Goethe Institute" />
+        <img src={yogapod} alt="YOGAPOD" />
       </div>
     </div>
   );

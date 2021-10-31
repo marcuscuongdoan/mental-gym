@@ -1,0 +1,34 @@
+.art {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 1110px;
+  height: 100vh;
+}
+
+.row {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.art-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding: 5%;
+  transition: transform 0.5s;
+  .item {
+    padding-bottom: 25%;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  .person {
+    width: 50%;
+  }
+}
+
+.character {
+  max-width: 10%;
+}
