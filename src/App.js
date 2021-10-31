@@ -46,8 +46,8 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Router>
+    <div className="container-wrapper">
+      <Router basename={process.env.PUBLIC_URL}>
         <AnimatedSwitch
           atEnter={bounceTransition.atEnter}
           atLeave={bounceTransition.atLeave}
