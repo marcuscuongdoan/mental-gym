@@ -46,7 +46,7 @@ function App() {
   };
 
   return (
-    <div className="container-wrapper">
+    <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <AnimatedSwitch
           atEnter={bounceTransition.atEnter}
