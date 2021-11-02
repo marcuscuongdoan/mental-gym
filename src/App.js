@@ -7,9 +7,6 @@ import {
 import { spring, AnimatedSwitch } from 'react-router-transition';
 import routes from './routes';
 
-import goethe from "./assets/logos/goethe.png";
-import yogapod from "./assets/logos/yogapod.png";
-
 function App() {
   function mapStyles(styles) {
     return {
@@ -61,10 +58,6 @@ function App() {
           ))}
         </AnimatedSwitch>
       </Router>
-      <div className="logo">
-        <img src={goethe} alt="Goethe Institute" />
-        <img src={yogapod} alt="YOGAPOD" />
-      </div>
     </div>
   );
 }

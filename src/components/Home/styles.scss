@@ -1,0 +1,101 @@
+.Home {
+  width: 100vw;
+  max-width: 1110px;
+  height: calc(4191 / 6000 * 100vw);
+  max-height: calc(4191 / 6000 * 1110px);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  overflow: hidden;  
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .background {
+    grid-column: 1 / 13;
+    grid-row: 1 / 13;
+  }
+  
+  .room-selected {
+    grid-column: 1 / 13;
+    grid-row: 1 / 13;
+    opacity: 0;
+    transition: transform, opacity 0.5s linear;
+  }
+  
+  #art {
+    grid-column: 6 / 8;
+    grid-row: 6 / 9;
+    z-index: 2;
+  }
+  #locker {
+    grid-column: 9 / 11;
+    grid-row: 5 / 7;
+    z-index: 2;
+  }
+  #lounge {
+    grid-column: 3 / 6;
+    grid-row: 6 / 11;
+    z-index: 1;
+  }
+  #movement {
+    grid-column: 4 / 6;
+    grid-row: 4 / 8;
+    z-index: 2;
+  }
+  #smoothie {
+    grid-column: 9 / 12;
+    grid-row: 10 / 12;
+    z-index: 3;
+  }
+  #sound {
+    grid-column: 8 / 10;
+    grid-row: 8 / 11;
+    z-index: 2;
+  }
+  #spa {
+    grid-column: 9 / 12;
+    grid-row: 7 / 10;
+    z-index: 1;
+  }
+  #theatre {
+    grid-column: 6 / 10;
+    grid-row: 3 / 6;
+    z-index: 1;
+  }
+  #write {
+    grid-column: 8 / 9;
+    grid-row: 6 / 9;
+    z-index: 2;
+  }
+  #yoga {
+    grid-column: 6 / 8;
+    grid-row: 9 / 11;
+    z-index: 1;
+  }
+  
+  .selector:hover ~ .room-selected {
+    opacity: 1;
+  }  
+}
+
+.logo {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  height: 3vh;
+  display: flex;
+  width: auto;
+
+  img {
+    height: 100%;
+    width: auto;
+    margin-left: 50px;
+  }
+
+  .goethe {
+    transform: scale(1.5);
+  }
+}

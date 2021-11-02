@@ -43,7 +43,7 @@
 .container {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,16 +56,52 @@
   }
 }
 
-.logo {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
-  height: 5vh;
-  display: flex;
-  gap: 5%;
+.room {
+  // overflow: hidden;
+  width: 100vw;
+  max-width: 1110px;
+  height: 100vh;
 
+  .row {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    padding: 5%;
+
+    .item {
+      width: 100%;
+      height: auto;
+      transition: transform 0.2s;
+      padding-bottom: 25%;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+    .person {
+      width: 50%;
+    }
+  }
+}
+
+.back-button {
+  position: absolute;
+  top: 5vw;
+  left: 5vw;
+  transition: transform 0.2s;
+  
   img {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 10vw;
+  }
+  
+  &:hover {
+    transform: scale(1.5);
   }
 }
