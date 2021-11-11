@@ -6,6 +6,8 @@ import Movement from "./components/Movement";
 import Spa from "./components/Spa";
 import SmoothieBar from "./components/SmoothieBar";
 import Write from "./components/Write";
+import Yoga from "./components/Yoga";
+import Sound from "./components/Sound";
 
 const routes = [
     {
@@ -34,6 +36,11 @@ const routes = [
         component: Movement,
     },
     {
+        path: '/sound',
+        name: 'Sound',
+        component: Sound,
+    },
+    {
         path: '/spa',
         name: 'Spa',
         component: Spa,
@@ -47,6 +54,11 @@ const routes = [
         path: '/write',
         name: 'Write',
         component: Write,
+    },
+    {
+        path: '/yoga',
+        name: 'Yoga',
+        component: Yoga,
     },
 ]
 

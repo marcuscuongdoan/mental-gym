@@ -1,15 +1,12 @@
-import { useHistory } from "react-router-dom";
-
 import hourglass from "../../assets/write/hourglass.png";
 import portal from "../../assets/write/portal.png";
 
-import back_button from "../../assets/back.png";
+import Room from "../../layouts/room";
 
 function Write() {
-  const history = useHistory();
 
   return (
-    <div className="container">
+    <Room>
       <div className="room">
         <div className="row">
           <div className="item-container">
@@ -20,10 +17,7 @@ function Write() {
           </div>
         </div>
       </div>
-      <div className="back-button">
-        <img src={back_button} alt="Back" onClick={() => history.goBack()} />
-      </div>
-    </div>
+      </Room>
   );
 }
 
