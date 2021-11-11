@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mental-gym/static/css/main.bfbf1c61.chunk.css",
-    "main.js": "/mental-gym/static/js/main.f67d4716.chunk.js",
-    "main.js.map": "/mental-gym/static/js/main.f67d4716.chunk.js.map",
+    "main.js": "/mental-gym/static/js/main.eab52af4.chunk.js",
+    "main.js.map": "/mental-gym/static/js/main.eab52af4.chunk.js.map",
     "runtime-main.js": "/mental-gym/static/js/runtime-main.0c0da4a4.js",
     "runtime-main.js.map": "/mental-gym/static/js/runtime-main.0c0da4a4.js.map",
     "static/js/2.b911e6cf.chunk.js": "/mental-gym/static/js/2.b911e6cf.chunk.js",
@@ -21,7 +21,9 @@
     "static/media/book_1.a2f311ef.png": "/mental-gym/static/media/book_1.a2f311ef.png",
     "static/media/book_2.7512dd8f.png": "/mental-gym/static/media/book_2.7512dd8f.png",
     "static/media/book_3.f016d981.png": "/mental-gym/static/media/book_3.f016d981.png",
+    "static/media/chicken.65267db1.png": "/mental-gym/static/media/chicken.65267db1.png",
     "static/media/decoration.c2c0e885.png": "/mental-gym/static/media/decoration.c2c0e885.png",
+    "static/media/ear.1fb3ae93.png": "/mental-gym/static/media/ear.1fb3ae93.png",
     "static/media/goethe.f522ad52.png": "/mental-gym/static/media/goethe.f522ad52.png",
     "static/media/green.8a3e1e7f.png": "/mental-gym/static/media/green.8a3e1e7f.png",
     "static/media/hourglass.4f5e641b.png": "/mental-gym/static/media/hourglass.4f5e641b.png",
@@ -45,13 +47,15 @@
     "static/media/theatre.c0084a9e.png": "/mental-gym/static/media/theatre.c0084a9e.png",
     "static/media/write.eec2c514.png": "/mental-gym/static/media/write.eec2c514.png",
     "static/media/yellow.ae69d66f.png": "/mental-gym/static/media/yellow.ae69d66f.png",
+    "static/media/yoda.ed657545.png": "/mental-gym/static/media/yoda.ed657545.png",
     "static/media/yoga.79f3b410.png": "/mental-gym/static/media/yoga.79f3b410.png",
+    "static/media/yoga.bcdd2240.png": "/mental-gym/static/media/yoga.bcdd2240.png",
     "static/media/zentangle.fff135ff.png": "/mental-gym/static/media/zentangle.fff135ff.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0c0da4a4.js",
     "static/js/2.b911e6cf.chunk.js",
     "static/css/main.bfbf1c61.chunk.css",
-    "static/js/main.f67d4716.chunk.js"
+    "static/js/main.eab52af4.chunk.js"
   ]
 }
