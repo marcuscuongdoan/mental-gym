@@ -8,6 +8,7 @@ import SmoothieBar from "./components/SmoothieBar";
 import Write from "./components/Write";
 import Yoga from "./components/Yoga";
 import Sound from "./components/Sound";
+import Theatre from "./components/Theatre";
 
 const routes = [
     {
@@ -49,6 +50,11 @@ const routes = [
         path: '/smoothie',
         name: 'SmoothieBar',
         component: SmoothieBar,
+    },
+    {
+        path: '/theatre',
+        name: 'Theatre',
+        component: Theatre,
     },
     {
         path: '/write',
