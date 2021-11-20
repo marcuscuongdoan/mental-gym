@@ -1,3 +1,4 @@
+import "./styles.scss";
 import hourglass from "../../assets/write/hourglass.png";
 import portal from "../../assets/write/portal.png";
 
@@ -10,7 +11,7 @@ function Write() {
       <div className="room">
         <div className="row">
           <div className="item-container">
-            <img className="item" src={hourglass} alt="Hourglass" />
+            <img className="item hourglass" src={hourglass} alt="Hourglass" />
           </div>
           <div className="item-container">
             <img className="item" src={portal} alt="Portal" />

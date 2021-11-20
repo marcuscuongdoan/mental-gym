@@ -343,11 +343,11 @@ function Theatre() {
 
           {step < 10 ? (
             <div className="row">
-              <button onClick={() => choose(true)}>
+              <button className="left-btn" onClick={() => choose(true)}>
                 {steps[step].buttons[0]}
               </button>
               <div className="question">{steps[step].name}?</div>
-              <button onClick={() => choose(false)}>
+              <button className="right-btn" onClick={() => choose(false)}>
                 {steps[step].buttons[1]}
               </button>
             </div>

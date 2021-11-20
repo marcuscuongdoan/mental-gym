@@ -88,11 +88,11 @@
     font-family: "QuantumProfit";
     font-size: 40px;
 
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: 750px) {
       font-size: 20px;
     }
-    
-    @media only screen and (max-width: 400px) {
+
+    @media only screen and (max-width: 450px) {
       font-size: 10px;
     }
 
@@ -100,22 +100,30 @@
       font-family: "QuantumProfit";
       display: block;
       width: 100%;
-      background-color: white;
-      border: 2px dashed brown;
+      color: white;
       border-radius: 5px;
+      text-shadow: 2.6px 4.5px 0px #000000, 2px 0 0 #000000, -2px 0 0 #000000,
+        0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000,
+        1px -1px 0 #000000, -1px 1px 0 #000000;
       font-size: 40px;
-      
-      @media only screen and (max-width: 700px) {
+
+      @media only screen and (max-width: 800px) {
         font-size: 20px;
       }
-      @media only screen and (max-width: 400px) {
+      @media only screen and (max-width: 450px) {
         font-size: 10px;
       }
 
-      &:hover {
-        transform: scale(1.1);
-        border: 2px solid brown;
+      &:active {
+        transform: rotate(-10deg);
       }
+    }
+
+    .left-btn {
+      background-color: #ffd800;
+    }
+    .right-btn {
+      background-color: #24bded;
     }
 
     .question {
@@ -123,12 +131,4 @@
       margin: auto;
     }
   }
-}
-
-
-
-@font-face {
-  font-family: "QuantumProfit";
-  src: local("QuantumProfit"),
-    url("../../fonts/QuantumProfit.ttf") format("truetype");
 }

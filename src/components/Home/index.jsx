@@ -75,11 +75,14 @@ const ROOM_LIST = [
 
 function Home() {
   const [image, setImage] = useState(background);
+  const [title, setTitle] = useState("Welcome to Mental Gym!");
   const history = useHistory();
 
   const handleMouseOver = (event) => {
     const room = ROOMS[event.target.id];
-    return setImage(room.img);
+    setTitle(room.name);
+    setImage(room.img);
+    return;
   };
   const handleOnClick = (event) => {
     const room = ROOMS[event.target.id];
@@ -88,6 +91,7 @@ function Home() {
 
   return (
     <div className="container">
+      <h1 className="title">{title}</h1>
       <div className="Home">
         <img className="background" src={background} alt="background" />
         {ROOM_LIST.map((room) => {
@@ -106,6 +110,10 @@ function Home() {
       <div className="logo">
         <img className="goethe" src={goethe} alt="Goethe Institute" />
         <img src={yogapod} alt="YOGAPOD" />
+      </div>
+      <div className="note">
+        *Please using web browser like Google Chrome or Mozilla Firefox for best
+        experience
       </div>
     </div>
   );

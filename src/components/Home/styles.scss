@@ -6,25 +6,25 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  overflow: hidden;  
-  
+  overflow: hidden;
+
   img {
     width: 100%;
     height: auto;
   }
-  
+
   .background {
     grid-column: 1 / 13;
     grid-row: 1 / 13;
   }
-  
+
   .room-selected {
     grid-column: 1 / 13;
     grid-row: 1 / 13;
     opacity: 0;
     transition: transform, opacity 0.5s linear;
   }
-  
+
   #art {
     grid-column: 6 / 8;
     grid-row: 6 / 9;
@@ -75,10 +75,10 @@
     grid-row: 9 / 11;
     z-index: 1;
   }
-  
+
   .selector:hover ~ .room-selected {
     opacity: 1;
-  }  
+  }
 }
 
 .logo {
@@ -97,5 +97,18 @@
 
   .goethe {
     transform: scale(1.5);
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow: 2.6px 4.5px 0px #000000, 2px 0 0 #000000, -2px 0 0 #000000,
+    0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000,
+    1px -1px 0 #000000, -1px 1px 0 #000000;
+
+  span {
+    color: #ffd800;
   }
 }

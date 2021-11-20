@@ -3,32 +3,7 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  font-family: "QuantumProfit";
 }
 
 @keyframes App-logo-spin {
@@ -43,8 +18,8 @@
 .container {
   width: 100vw;
   height: 100vh;
-  // overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -67,7 +42,7 @@
     display: flex;
     justify-content: space-evenly;
   }
-  
+
   .item-container {
     display: flex;
     flex-direction: column;
@@ -95,13 +70,19 @@
   top: 5vw;
   left: 5vw;
   transition: transform 0.2s;
-  
+
   img {
     height: auto;
     width: 10vw;
   }
-  
+
   &:hover {
     transform: scale(1.5);
   }
+}
+
+@font-face {
+  font-family: "QuantumProfit";
+  src: local("QuantumProfit"),
+    url("./fonts/QuantumProfit.ttf") format("truetype");
 }
