@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/mental-gym/static/css/main.15333882.chunk.css",
-    "main.js": "/mental-gym/static/js/main.4ec561b4.chunk.js",
-    "main.js.map": "/mental-gym/static/js/main.4ec561b4.chunk.js.map",
-    "runtime-main.js": "/mental-gym/static/js/runtime-main.57d95956.js",
-    "runtime-main.js.map": "/mental-gym/static/js/runtime-main.57d95956.js.map",
+    "main.css": "/mental-gym/static/css/main.77b957bd.chunk.css",
+    "main.js": "/mental-gym/static/js/main.4d6f3d55.chunk.js",
+    "main.js.map": "/mental-gym/static/js/main.4d6f3d55.chunk.js.map",
+    "runtime-main.js": "/mental-gym/static/js/runtime-main.a0f77532.js",
+    "runtime-main.js.map": "/mental-gym/static/js/runtime-main.a0f77532.js.map",
     "static/js/2.bf560b35.chunk.js": "/mental-gym/static/js/2.bf560b35.chunk.js",
     "static/js/2.bf560b35.chunk.js.map": "/mental-gym/static/js/2.bf560b35.chunk.js.map",
-    "static/js/3.62ee7bc8.chunk.js": "/mental-gym/static/js/3.62ee7bc8.chunk.js",
-    "static/js/3.62ee7bc8.chunk.js.map": "/mental-gym/static/js/3.62ee7bc8.chunk.js.map",
+    "static/js/3.354e1623.chunk.js": "/mental-gym/static/js/3.354e1623.chunk.js",
+    "static/js/3.354e1623.chunk.js.map": "/mental-gym/static/js/3.354e1623.chunk.js.map",
     "index.html": "/mental-gym/index.html",
-    "static/css/main.15333882.chunk.css.map": "/mental-gym/static/css/main.15333882.chunk.css.map",
+    "static/css/main.77b957bd.chunk.css.map": "/mental-gym/static/css/main.77b957bd.chunk.css.map",
     "static/js/2.bf560b35.chunk.js.LICENSE.txt": "/mental-gym/static/js/2.bf560b35.chunk.js.LICENSE.txt",
-    "static/media/styles.scss": "/mental-gym/static/media/QuantumProfit.ae18e2fc.ttf",
+    "static/media/App.scss": "/mental-gym/static/media/QuantumProfit.ae18e2fc.ttf",
     "static/media/art.e02fd7da.png": "/mental-gym/static/media/art.e02fd7da.png",
     "static/media/art_1.eea87dba.png": "/mental-gym/static/media/art_1.eea87dba.png",
     "static/media/art_2.a58d2942.png": "/mental-gym/static/media/art_2.a58d2942.png",
@@ -88,9 +88,9 @@
     "static/media/zentangle.fff135ff.png": "/mental-gym/static/media/zentangle.fff135ff.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.57d95956.js",
+    "static/js/runtime-main.a0f77532.js",
     "static/js/2.bf560b35.chunk.js",
-    "static/css/main.15333882.chunk.css",
-    "static/js/main.4ec561b4.chunk.js"
+    "static/css/main.77b957bd.chunk.css",
+    "static/js/main.4d6f3d55.chunk.js"
   ]
 }
