@@ -1,12 +1,12 @@
 .Home {
-  width: 100vw;
+  width: 60vw;
   max-width: 1110px;
-  height: calc(4191 / 6000 * 100vw);
+  height: calc(4191 / 6000 * 60vw);
   max-height: calc(4191 / 6000 * 1110px);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  overflow: hidden;
+  position: relative;
 
   img {
     width: 100%;
@@ -101,6 +101,7 @@
 }
 
 .title {
+  margin-top: 50px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
@@ -108,7 +109,22 @@
     0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000,
     1px -1px 0 #000000, -1px 1px 0 #000000;
 
-  span {
-    color: #ffd800;
+  @media only screen and (max-width: 800px) {
+    font-size: 20px;
+    text-shadow: 1.6px 2.5px 0px #000000, 2px 0 0 #000000, -2px 0 0 #000000,
+      0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000,
+      1px -1px 0 #000000, -1px 1px 0 #000000;
+  }
+  @media only screen and (max-width: 300px) {
+    font-size: 10px;
+    text-shadow: 0.6px 1.5px 0px #000000, 2px 0 0 #000000, -2px 0 0 #000000,
+      0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000,
+      1px -1px 0 #000000, -1px 1px 0 #000000;
+  }
+}
+
+.note {
+  @media only screen and (max-width: 300px) {
+    font-size: 10px;
   }
 }
