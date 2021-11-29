@@ -1,0 +1,134 @@
+.theatre {
+  width: 100vw;
+  max-width: 1110px;
+  height: calc(335 / 600 * 100vw);
+  max-height: calc(335 / 600 * 1110px);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .stage {
+    grid-column: 1 / 13;
+    grid-row: 1 / 13;
+  }
+
+  .full-body {
+    display: grid;
+    grid-column: 6 / 8;
+    grid-row: 4 / 12;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    transition: all 0.5s;
+    position: relative;
+
+    .part {
+      position: absolute;
+    }
+  }
+
+  .showered {
+    grid-column: 5 / 6;
+    grid-row: 3 / 5;
+  }
+
+  .not_showered {
+    grid-column: 8 / 9;
+    grid-row: 4 / 6;
+  }
+
+  .tidy {
+    &_a {
+      grid-column: 6 / 7;
+      grid-row: 3 / 4;
+      width: 50%;
+    }
+    &_a1 {
+      grid-column: 5 / 6;
+      grid-row: 4 / 6;
+    }
+    &_b {
+      grid-column: 7 / 8;
+      grid-row: 3 / 5;
+      width: 50%;
+    }
+    &_b1 {
+      grid-column: 8 / 9;
+      grid-row: 9 / 10;
+    }
+  }
+
+  .food {
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+  }
+
+  .no_food {
+    grid-column: 10 / 12;
+    grid-row: 5 / 7;
+  }
+
+  .family {
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+    transform: scale(0.5);
+  }
+
+  .row {
+    padding-top: 0;
+    grid-column: 2 / 12;
+    grid-row: 10 / 12;
+    gap: 20px;
+    font-family: "QuantumProfit";
+    font-size: 40px;
+
+    @media only screen and (max-width: 750px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 450px) {
+      font-size: 10px;
+    }
+
+    button {
+      font-family: "QuantumProfit";
+      display: block;
+      width: 100%;
+      color: white;
+      border-radius: 5px;
+      text-shadow: 2.6px 4.5px 0px #000000, 2px 0 0 #000000, -2px 0 0 #000000,
+        0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000,
+        1px -1px 0 #000000, -1px 1px 0 #000000;
+      font-size: 40px;
+
+      @media only screen and (max-width: 800px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 450px) {
+        font-size: 10px;
+      }
+
+      &:active {
+        transform: rotate(-10deg);
+      }
+    }
+
+    .left-btn {
+      background-color: #ffd800;
+    }
+    .right-btn {
+      background-color: #24bded;
+    }
+
+    .question {
+      width: 100%;
+      margin: auto;
+    }
+  }
+}
