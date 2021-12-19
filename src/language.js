@@ -2,7 +2,7 @@ import LocalizedStrings from "react-localization";
 
 const lstrings = new LocalizedStrings({
   en: {
-    language: "Set Language",
+    language: "Chuyển sang Tiếng Việt",
     intro: "Welcome to Mental Gym!",
     art: "Art",
     locker: "Locker",
@@ -14,9 +14,10 @@ const lstrings = new LocalizedStrings({
     theatre: "Theatre",
     write: "Write",
     yoga: "Yoga",
+    note: "*Please using web browser like Google Chrome or Mozilla Firefox for best experience",
   },
   vn: {
-    language: "Chọn ngôn ngữ",
+    language: "Change to English",
     intro: "Chào mừng bạn đến với Phòng Tập Tinh Thần!",
     art: "Phòng Vẽ",
     locker: "Phòng Khóa",
@@ -28,6 +29,7 @@ const lstrings = new LocalizedStrings({
     theatre: "Rạp Hát",
     write: "Phòng Viết",
     yoga: "Phòng Yoga",
+    note: "*Bạn nên sử dụng trình duyệt Google Chrome hoặc Mozilla Firefox để thưởng thức tốt nhất",
   },
 });
 

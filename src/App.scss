@@ -16,7 +16,26 @@
 }
 
 .language {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
   cursor: pointer;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 15px;
+  cursor: url("./assets/mouse.png"), auto;
+
+  &.en {
+    background-color: #24bded;
+  }
+
+  &.vn {
+    background-color: #ffd800;
+  }
 }
 
 .route-wrapper {
@@ -73,6 +92,67 @@
 
   &:hover {
     transform: scale(1.5);
+  }
+}
+
+.Modal {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.2s;
+
+  &.hide {
+    display: none;
+  }
+
+  .content {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: calc(9 / 16 * 50vw);
+    animation: unfoldIn 0.3s forwards;
+
+    @media only screen and (max-width: 720px) {
+      width: 100%;
+      height: calc(9 / 16 * 100vw);
+    }
+
+    @keyframes unfoldIn {
+      0% {
+        transform: scaleX(0.005) scaleY(0);
+      }
+      50% {
+        transform: scaleX(0.005) scaleY(1);
+      }
+      100% {
+        transform: scaleY(1) scaleX(1);
+      }
+    }
+
+    @keyframes slideLeft {
+      0% {
+        left: -50%;
+      }
+      100% {
+        left: 50%;
+      }
+    }
+
+    @keyframes slideRight {
+      0% {
+        left: -50%;
+      }
+      100% {
+        left: 50%;
+      }
+    }
   }
 }
 

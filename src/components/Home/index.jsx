@@ -108,15 +108,12 @@ function Home() {
           );
         })}
         <img className="room-selected" src={image} alt="background" />
-        <div className="logo">
-          <img className="goethe" src={goethe} alt="Goethe Institute" />
-          <img src={yogapod} alt="YOGAPOD" />
-        </div>
       </div>
-      <div className="note">
-        *Please using web browser like Google Chrome or Mozilla Firefox for best
-        experience
+      <div className="logo">
+        <img className="goethe" src={goethe} alt="Goethe Institute" />
+        <img src={yogapod} alt="YOGAPOD" />
       </div>
+      <div className="note">{lstrings.note}</div>
     </div>
   );
 }
