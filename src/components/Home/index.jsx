@@ -17,6 +17,8 @@ import yoga from "../../assets/menu/yoga.png";
 import goethe from "../../assets/logos/goethe.png";
 import yogapod from "../../assets/logos/yogapod.png";
 
+import lstrings from "../../language";
+
 const ROOMS = {
   art: {
     name: "art",
@@ -75,7 +77,7 @@ const ROOM_LIST = [
 
 function Home() {
   const [image, setImage] = useState(background);
-  const [title, setTitle] = useState("Welcome to Mental Gym!");
+  const [title, setTitle] = useState("intro");
   const history = useHistory();
 
   const handleMouseOver = (event) => {
@@ -91,7 +93,7 @@ function Home() {
 
   return (
     <div className="container">
-      <h1 className="title">{title}</h1>
+      <h1 className="title">{lstrings.getString(title)}</h1>
       <div className="Home">
         <img className="background" src={background} alt="background" />
         {ROOM_LIST.map((room) => {

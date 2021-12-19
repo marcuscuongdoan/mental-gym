@@ -83,7 +83,7 @@
 
 .logo {
   position: absolute;
-  bottom: 5%;
+  top: 5%;
   right: 5%;
   height: 3vh;
   display: flex;
@@ -102,6 +102,7 @@
 
 .title {
   margin-top: 50px;
+  margin-bottom: -50px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
@@ -124,6 +125,7 @@
 }
 
 .note {
+  font-weight: bold;
   @media only screen and (max-width: 300px) {
     font-size: 10px;
   }

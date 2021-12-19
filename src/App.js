@@ -1,13 +1,19 @@
-import './App.scss';
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Route
-} from "react-router-dom";
-import { spring, AnimatedSwitch } from 'react-router-transition';
-import routes from './routes';
+import "./App.scss";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { spring, AnimatedSwitch } from "react-router-transition";
+import routes from "./routes";
+import lstrings from "./language";
 
 function App() {
+  const [lang, setLang] = useState({ language: "en" });
+
+  function changeLanguage() {
+    const otherLang = lstrings.getLanguage() === "en" ? "vn" : "en";
+    lstrings.setLanguage(otherLang);
+    setLang({ language: otherLang });
+  }
+
   function mapStyles(styles) {
     return {
       opacity: styles.opacity,
@@ -44,6 +50,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className="language" onClick={changeLanguage}>
+        {lstrings.language} {lang.language}
+      </div>
       <Router basename={process.env.PUBLIC_URL}>
         <AnimatedSwitch
           atEnter={bounceTransition.atEnter}
@@ -52,9 +61,8 @@ function App() {
           mapStyles={mapStyles}
           className="route-wrapper"
         >
-          {routes.map(route => (
-            <Route exact {...route} key={route.name}>
-            </Route>
+          {routes.map((route) => (
+            <Route exact {...route} key={route.name}></Route>
           ))}
         </AnimatedSwitch>
       </Router>

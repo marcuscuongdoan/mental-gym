@@ -2,16 +2,8 @@
   text-align: center;
   width: 100vw;
   height: 100vh;
-  font-family: "QuantumProfit";
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-family: "Cucho";
+  overflow-x: hidden;
 }
 
 .container {
@@ -20,6 +12,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.language {
+  cursor: pointer;
 }
 
 .route-wrapper {
@@ -80,7 +76,12 @@
 }
 
 @font-face {
-  font-family: "QuantumProfit";
-  src: local("QuantumProfit"),
-    url("./fonts/QuantumProfit.ttf") format("truetype");
+  font-family: "Cucho";
+  src: local("Cucho"), url("./fonts/Cucho.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cucho";
+  src: local("Cucho"), url("./fonts/Cucho Bold.otf") format("truetype");
+  font-weight: bold;
 }
