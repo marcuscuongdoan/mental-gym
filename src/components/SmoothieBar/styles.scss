@@ -1,3 +1,11 @@
 .item-container {
-    justify-content: end;
+  justify-content: end;
+}
+
+.poem {
+  padding: 20px;
+  font-family: monospace;
+  div {
+    text-align: left;
+  }
 }

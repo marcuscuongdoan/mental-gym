@@ -46,7 +46,7 @@ import thirsty from "../../assets/theatre/body-parts/thirsty.png";
 import weak from "../../assets/theatre/body-parts/weak.png";
 
 import Room from "../../layouts/room";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const steps = [
   {
@@ -115,12 +115,7 @@ function Theatre() {
   };
   const [decoration, setDeco] = useState(initialDecoration);
 
-  useEffect(() => {
-    console.log(decoration);
-  }, [decoration]);
-
   const choose = (left) => {
-    console.log(step);
     switch (step) {
       case 0: {
         wakeUp(left);

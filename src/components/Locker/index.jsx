@@ -41,11 +41,12 @@ function Locker() {
         <ReactPlayer
           url={
             blue
-              ? "https://www.youtube.com/watch?v=l0pO_zVZA5Iw"
-              : "https://www.youtube.com/watch?v=hFfvVBJYOpM"
+              ? "https://www.youtube.com/watch?v=hFfvVBJYOpM"
+              : "https://www.youtube.com/watch?v=l0pO_zVZA5Iw"
           }
+          config={{ playerVars: { showinfo: 1 } }}
           width={"100%"}
-          height={"100%"}
+          height={"calc(9 / 16 * 50vw)"}
         />
       </Modal>
     </Room>
