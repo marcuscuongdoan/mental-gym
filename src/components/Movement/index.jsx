@@ -1,6 +1,6 @@
-import Room from "../../layouts/room";
-import movement_1 from "../../assets/movement/movement_1.png";
-import movement_2 from "../../assets/movement/movement_2.png";
+import Room from "layouts/room";
+import movement_1 from "assets/movement/movement_1.png";
+import movement_2 from "assets/movement/movement_2.png";
 
 function Movement() {
   return (

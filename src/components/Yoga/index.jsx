@@ -1,17 +1,16 @@
-import yoga from "../../assets/yoga/yoga.png";
+import yoga from "assets/yoga/yoga.png";
 
-import Room from "../../layouts/room";
+import Room from "layouts/room";
 
 function Yoga() {
-
   return (
     <Room>
       <div className="room">
         <div className="row">
-            <img className="item" src={yoga} alt="Yoga" />
+          <img className="item" src={yoga} alt="Yoga" />
         </div>
       </div>
-      </Room>
+    </Room>
   );
 }
 

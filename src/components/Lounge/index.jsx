@@ -1,9 +1,9 @@
 import "./styles.scss";
-import Room from "../../layouts/room";
-import book_1 from "../../assets/lounge/book_1.png";
-import book_2 from "../../assets/lounge/book_2.png";
-import book_3 from "../../assets/lounge/book_3.png";
-import decoration from "../../assets/lounge/decoration.png";
+import Room from "layouts/room";
+import book_1 from "assets/lounge/book_1.png";
+import book_2 from "assets/lounge/book_2.png";
+import book_3 from "assets/lounge/book_3.png";
+import decoration from "assets/lounge/decoration.png";
 
 function Lounge() {
   return (

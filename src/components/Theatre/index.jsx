@@ -1,94 +1,66 @@
 import "./styles.scss";
 
-import stage from "../../assets/theatre/stage.png";
+import stage from "assets/theatre/stage.png";
 
-import chicken_head from "../../assets/theatre/body-parts/chicken/chicken_head.png";
-import chicken_body from "../../assets/theatre/body-parts/chicken/chicken_body.png";
-import chicken_arms from "../../assets/theatre/body-parts/chicken/chicken_arms.png";
-import chicken_hands from "../../assets/theatre/body-parts/chicken/chicken_hands.png";
-import chicken_legs from "../../assets/theatre/body-parts/chicken/chicken_legs.png";
+import chicken_head from "assets/theatre/body-parts/chicken/chicken_head.png";
+import chicken_body from "assets/theatre/body-parts/chicken/chicken_body.png";
+import chicken_arms from "assets/theatre/body-parts/chicken/chicken_arms.png";
+import chicken_hands from "assets/theatre/body-parts/chicken/chicken_hands.png";
+import chicken_legs from "assets/theatre/body-parts/chicken/chicken_legs.png";
 
-import owl_head from "../../assets/theatre/body-parts/owl/owl_head.png";
-import owl_body from "../../assets/theatre/body-parts/owl/owl_body.png";
-import owl_arms from "../../assets/theatre/body-parts/owl/owl_arms.png";
-import owl_hands from "../../assets/theatre/body-parts/owl/owl_hands.png";
-import owl_legs from "../../assets/theatre/body-parts/owl/owl_legs.png";
+import owl_head from "assets/theatre/body-parts/owl/owl_head.png";
+import owl_body from "assets/theatre/body-parts/owl/owl_body.png";
+import owl_arms from "assets/theatre/body-parts/owl/owl_arms.png";
+import owl_hands from "assets/theatre/body-parts/owl/owl_hands.png";
+import owl_legs from "assets/theatre/body-parts/owl/owl_legs.png";
 
-import showered from "../../assets/theatre/shower/showered.png";
-import not_showered from "../../assets/theatre/shower/not_showered.png";
+import showered from "assets/theatre/shower/showered.png";
+import not_showered from "assets/theatre/shower/not_showered.png";
 
-import tidy_a from "../../assets/theatre/tidy/tidy_a.png";
-import tidy_a1 from "../../assets/theatre/tidy/tidy_a1.png";
-import tidy_b from "../../assets/theatre/tidy/tidy_b.png";
-import tidy_b1 from "../../assets/theatre/tidy/tidy_b1.png";
+import tidy_a from "assets/theatre/tidy/tidy_a.png";
+import tidy_a1 from "assets/theatre/tidy/tidy_a1.png";
+import tidy_b from "assets/theatre/tidy/tidy_b.png";
+import tidy_b1 from "assets/theatre/tidy/tidy_b1.png";
 
-import food from "../../assets/theatre/eat/food.png";
-import no_food from "../../assets/theatre/eat/no_food.png";
+import food from "assets/theatre/eat/food.png";
+import no_food from "assets/theatre/eat/no_food.png";
 
-import family from "../../assets/theatre/family/family.png";
-import no_family from "../../assets/theatre/family/no_family.png";
+import family from "assets/theatre/family/family.png";
+import no_family from "assets/theatre/family/no_family.png";
 
-import big_hands from "../../assets/theatre/body-parts/big_hands.png";
-import chicken_big from "../../assets/theatre/body-parts/chicken_big.png";
-import chicken_big_2 from "../../assets/theatre/body-parts/chicken_big_2.png";
-import chicken_small from "../../assets/theatre/body-parts/chicken_small.png";
-import chicken_small_2 from "../../assets/theatre/body-parts/chicken_small_2.png";
-import coak from "../../assets/theatre/body-parts/coak.png";
-import drink from "../../assets/theatre/body-parts/drink.png";
-import empty from "../../assets/theatre/body-parts/empty.png";
-import full from "../../assets/theatre/body-parts/full.png";
-import owl_big from "../../assets/theatre/body-parts/owl_big.png";
-import owl_big_2 from "../../assets/theatre/body-parts/owl_big_2.png";
-import owl_small from "../../assets/theatre/body-parts/owl_small.png";
-import owl_small_2 from "../../assets/theatre/body-parts/owl_small_2.png";
-import small_hands from "../../assets/theatre/body-parts/small_hands.png";
-import thirsty from "../../assets/theatre/body-parts/thirsty.png";
-import weak from "../../assets/theatre/body-parts/weak.png";
+import big_hands from "assets/theatre/body-parts/big_hands.png";
+import chicken_big from "assets/theatre/body-parts/chicken_big.png";
+import chicken_big_2 from "assets/theatre/body-parts/chicken_big_2.png";
+import chicken_small from "assets/theatre/body-parts/chicken_small.png";
+import chicken_small_2 from "assets/theatre/body-parts/chicken_small_2.png";
+import coak from "assets/theatre/body-parts/coak.png";
+import drink from "assets/theatre/body-parts/drink.png";
+import empty from "assets/theatre/body-parts/empty.png";
+import full from "assets/theatre/body-parts/full.png";
+import owl_big from "assets/theatre/body-parts/owl_big.png";
+import owl_big_2 from "assets/theatre/body-parts/owl_big_2.png";
+import owl_small from "assets/theatre/body-parts/owl_small.png";
+import owl_small_2 from "assets/theatre/body-parts/owl_small_2.png";
+import small_hands from "assets/theatre/body-parts/small_hands.png";
+import thirsty from "assets/theatre/body-parts/thirsty.png";
+import weak from "assets/theatre/body-parts/weak.png";
 
-import Room from "../../layouts/room";
+import Room from "layouts/room";
 import { useState } from "react";
 
-const steps = [
-  {
-    name: "Wake Up",
-    buttons: ["Early", "Late"],
-  },
-  {
-    name: "Take shower",
-    buttons: ["Take", "Nooooo"],
-  },
-  {
-    name: "Are you tidy",
-    buttons: ["Tidy", "Whatever"],
-  },
-  {
-    name: "Have some water",
-    buttons: ["Drinkkkk", "Nooooo"],
-  },
-  {
-    name: "Do you have breakfast",
-    buttons: ["Eat", "Nooooo"],
-  },
-  {
-    name: "Do you go to gym",
-    buttons: ["Yesssss", "Nooooo"],
-  },
-  {
-    name: "Will you read",
-    buttons: ["Of course!", "What is book?"],
-  },
-  {
-    name: "How about journal",
-    buttons: ["Write", "Skip"],
-  },
-  {
-    name: "Do you study",
-    buttons: ["Yessss", "Not matter"],
-  },
-  {
-    name: "Take time with family",
-    buttons: ["Yessss", "Skip"],
-  },
+import lstrings from "language";
+
+const keys = [
+  "wakeup",
+  "shower",
+  "tidy",
+  "drink",
+  "breakfast",
+  "gym",
+  "read",
+  "journal",
+  "study",
+  "family",
 ];
 
 function Theatre() {
@@ -101,6 +73,7 @@ function Theatre() {
   };
   const [body, setBody] = useState(initialBody);
   const [step, setStep] = useState(0);
+  const [conclusion, setConclusion] = useState(0);
   const initialDecoration = {
     head: -1,
     shower: -1,
@@ -116,6 +89,7 @@ function Theatre() {
   const [decoration, setDeco] = useState(initialDecoration);
 
   const choose = (left) => {
+    if (left) setConclusion(conclusion + 1);
     switch (step) {
       case 0: {
         wakeUp(left);
@@ -255,7 +229,7 @@ function Theatre() {
   };
 
   const study = (left) => {
-    if (left)
+    if (left) {
       setBody({
         ...body,
         head:
@@ -267,6 +241,7 @@ function Theatre() {
             ? owl_big_2
             : owl_small_2,
       });
+    }
     return;
   };
 
@@ -339,15 +314,26 @@ function Theatre() {
           {step < 10 ? (
             <div className="row">
               <button className="left-btn" onClick={() => choose(true)}>
-                {steps[step].buttons[0]}
+                {lstrings.theatreRoom[keys[step]].left}
               </button>
-              <div className="question">{steps[step].name}?</div>
+              <div className="question">
+                {lstrings.theatreRoom[keys[step]].title}?
+              </div>
               <button className="right-btn" onClick={() => choose(false)}>
-                {steps[step].buttons[1]}
+                {lstrings.theatreRoom[keys[step]].right}
               </button>
             </div>
           ) : null}
         </div>
+        {step >= 10 ? (
+          <div className="conclusion">
+            {
+              lstrings.theatreRoom.conclusion[
+                conclusion < 5 ? "less" : conclusion > 5 ? "more" : "balance"
+              ]
+            }
+          </div>
+        ) : null}
       </div>
     </Room>
   );

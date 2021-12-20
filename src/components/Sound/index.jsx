@@ -1,11 +1,10 @@
-import yoda from "../../assets/sound/yoda.png";
-import ear from "../../assets/sound/ear.png";
-import chicken from "../../assets/sound/chicken.png";
+import yoda from "assets/sound/yoda.png";
+import ear from "assets/sound/ear.png";
+import chicken from "assets/sound/chicken.png";
 
-import Room from "../../layouts/room";
+import Room from "layouts/room";
 
 function Sound() {
-
   return (
     <Room>
       <div className="room">
@@ -21,7 +20,7 @@ function Sound() {
           </div>
         </div>
       </div>
-      </Room>
+    </Room>
   );
 }
 

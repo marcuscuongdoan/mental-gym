@@ -1,8 +1,8 @@
 import { useState } from "react";
 import ReactPlayer from "react-player";
-import locker_blue from "../../assets/locker/locker_blue.png";
-import locker_yellow from "../../assets/locker/locker_yellow.png";
-import Room from "../../layouts/room";
+import locker_blue from "assets/locker/locker_blue.png";
+import locker_yellow from "assets/locker/locker_yellow.png";
+import Room from "layouts/room";
 import Modal from "../Modal/Modal";
 
 function Locker() {
@@ -44,7 +44,7 @@ function Locker() {
               ? "https://www.youtube.com/watch?v=hFfvVBJYOpM"
               : "https://www.youtube.com/watch?v=l0pO_zVZA5Iw"
           }
-          config={{ playerVars: { showinfo: 1 } }}
+          config={{ youtube: { layerVars: { showinfo: 1 } } }}
           width={"100%"}
           height={"calc(9 / 16 * 50vw)"}
         />

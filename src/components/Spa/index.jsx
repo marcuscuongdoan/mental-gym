@@ -1,7 +1,7 @@
 import "./styles.scss";
 
-import sauna from "../../assets/spa/sauna.png";
-import Room from "../../layouts/room";
+import sauna from "assets/spa/sauna.png";
+import Room from "layouts/room";
 
 function Spa() {
   return (

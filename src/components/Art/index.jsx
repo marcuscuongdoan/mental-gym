@@ -1,10 +1,10 @@
-import art_1 from "../../assets/art/art_1.png";
-import art_2 from "../../assets/art/art_2.png";
-import art_3 from "../../assets/art/art_3.png";
-import neuroart from "../../assets/art/neuroart.png";
-import zentangle from "../../assets/art/zentangle.png";
-import mental_check from "../../assets/art/mental_check.png";
-import Room from "../../layouts/room";
+import art_1 from "assets/art/art_1.png";
+import art_2 from "assets/art/art_2.png";
+import art_3 from "assets/art/art_3.png";
+import neuroart from "assets/art/neuroart.png";
+import zentangle from "assets/art/zentangle.png";
+import mental_check from "assets/art/mental_check.png";
+import Room from "layouts/room";
 
 function Art() {
   return (

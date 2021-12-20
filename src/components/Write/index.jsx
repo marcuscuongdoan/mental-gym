@@ -1,11 +1,10 @@
 import "./styles.scss";
-import hourglass from "../../assets/write/hourglass.png";
-import portal from "../../assets/write/portal.png";
+import hourglass from "assets/write/hourglass.png";
+import portal from "assets/write/portal.png";
 
-import Room from "../../layouts/room";
+import Room from "layouts/room";
 
 function Write() {
-
   return (
     <Room>
       <div className="room">
@@ -18,7 +17,7 @@ function Write() {
           </div>
         </div>
       </div>
-      </Room>
+    </Room>
   );
 }
 

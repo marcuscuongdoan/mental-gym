@@ -2,22 +2,22 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 import "./styles.scss";
-import background from "../../assets/menu/background.png";
-import art from "../../assets/menu/art.png";
-import locker from "../../assets/menu/locker.png";
-import lounge from "../../assets/menu/lounge.png";
-import movement from "../../assets/menu/movement.png";
-import smoothie from "../../assets/menu/smoothie.png";
-import sound from "../../assets/menu/sound.png";
-import spa from "../../assets/menu/spa.png";
-import theatre from "../../assets/menu/theatre.png";
-import write from "../../assets/menu/write.png";
-import yoga from "../../assets/menu/yoga.png";
+import background from "assets/menu/background.png";
+import art from "assets/menu/art.png";
+import locker from "assets/menu/locker.png";
+import lounge from "assets/menu/lounge.png";
+import movement from "assets/menu/movement.png";
+import smoothie from "assets/menu/smoothie.png";
+import sound from "assets/menu/sound.png";
+import spa from "assets/menu/spa.png";
+import theatre from "assets/menu/theatre.png";
+import write from "assets/menu/write.png";
+import yoga from "assets/menu/yoga.png";
 
-import goethe from "../../assets/logos/goethe.png";
-import yogapod from "../../assets/logos/yogapod.png";
+import goethe from "assets/logos/goethe.png";
+import yogapod from "assets/logos/yogapod.png";
 
-import lstrings from "../../language";
+import lstrings from "language";
 
 const ROOMS = {
   art: {

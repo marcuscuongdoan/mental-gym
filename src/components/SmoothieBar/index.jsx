@@ -1,12 +1,12 @@
 import "./styles.scss";
-import red from "../../assets/smoothie_bar/red.png";
-import sand from "../../assets/smoothie_bar/sand.png";
-import yellow from "../../assets/smoothie_bar/yellow.png";
-import pink from "../../assets/smoothie_bar/pink.png";
-import green from "../../assets/smoothie_bar/green.png";
-import Room from "../../layouts/room";
+import red from "assets/smoothie_bar/red.png";
+import sand from "assets/smoothie_bar/sand.png";
+import yellow from "assets/smoothie_bar/yellow.png";
+import pink from "assets/smoothie_bar/pink.png";
+import green from "assets/smoothie_bar/green.png";
+import Room from "layouts/room";
 import Modal from "../Modal/Modal";
-import tam_poem_cover from "../../assets/smoothie_bar/tam_poem_cover.png";
+import tam_poem_cover from "assets/smoothie_bar/tam_poem_cover.png";
 import { useState } from "react";
 
 function SmoothieBar() {
