@@ -79,6 +79,10 @@ const lstrings = new LocalizedStrings({
       mai_anh: "Movement by Le Mai Anh",
       thanh_toan: "Movement by Doan Thanh Toan",
     },
+    lockerRoom: {
+      katherine: "The Journey - By Katherine Nguyen",
+      john: "4 My Mind - By John Andrew Cunnington",
+    },
   },
   vn: {
     language: "Change to English",
@@ -157,6 +161,10 @@ const lstrings = new LocalizedStrings({
     movementRoom: {
       mai_anh: "Chuyển Động bởi Lê Mai Anh",
       thanh_toan: "Chuyển Động bởi Đoàn Thanh Toàn",
+    },
+    lockerRoom: {
+      katherine: "The Journey - Bởi Katherine Nguyễn",
+      john: "4 My Mind - Bởi John Andrew Cunnington",
     },
   },
 });

@@ -13,6 +13,7 @@ import tam_tram_cam from "assets/spa/tam_tram_cam.jpg";
 import Room from "layouts/room";
 import Modal from "components/Modal/Modal";
 import { useState } from "react/cjs/react.development";
+import video_frame from "assets/video_frame.png";
 
 const images = [
   bach_cang_thang,
@@ -27,15 +28,15 @@ const images = [
 ];
 
 const author = [
-  "Trương Xuân Bách",
-  "Trương Xuân Bách",
-  "Trương Xuân Bách",
-  "Liêng Trương Trúc Linh",
-  "Liêng Trương Trúc Linh",
-  "Liêng Trương Trúc Linh",
-  "Nguyễn Thành Minh Tâm",
-  "Nguyễn Thành Minh Tâm",
-  "Nguyễn Thành Minh Tâm",
+  "Căng Thẳng - Trương Xuân Bách",
+  "Lo Âu - Trương Xuân Bách",
+  "Trầm Cảm - Trương Xuân Bách",
+  "Căng Thẳng - Liêng Trương Trúc Linh",
+  "Lo Âu - Liêng Trương Trúc Linh",
+  "Trầm Cảm - Liêng Trương Trúc Linh",
+  "Căng Thẳng - Nguyễn Thành Minh Tâm",
+  "Lo Âu - Nguyễn Thành Minh Tâm",
+  "Trầm Cảm - Nguyễn Thành Minh Tâm",
 ];
 function Spa() {
   const [show, setShow] = useState({ show: false, img: 0 });
@@ -83,15 +84,11 @@ function Spa() {
           <img src={tam_tram_cam} alt="Trầm Cảm" onClick={() => openImage(8)} />
         </div>
         <Modal show={show.show} handleClose={closeModal}>
-          <img
-            style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
-            }}
-            src={images[show.img]}
-            alt="Full"
-          />
-          <p>{author[show.img]}</p>
+          <img className="frame" src={video_frame} alt="Frame" />
+          <div className="photo">
+            <img src={images[show.img]} alt="Full" />
+          </div>
+          <p className="author">{author[show.img]}</p>
         </Modal>
       </div>
     </Room>

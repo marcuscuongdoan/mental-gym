@@ -22,4 +22,37 @@
       max-height: 100%;
     }
   }
+
+  .Modal {
+    .content {
+      width: auto;
+      height: auto;
+      max-height: 90%;
+      max-width: 90%;
+    }
+  }
+  .frame {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .photo {
+    position: absolute;
+    top: 10%;
+    height: 80%;
+    left: 5%;
+    width: 55%;
+
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  .author {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    width: 25%;
+  }
 }
