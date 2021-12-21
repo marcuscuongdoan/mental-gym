@@ -14,6 +14,7 @@ import Room from "layouts/room";
 import Modal from "components/Modal/Modal";
 import { useState } from "react/cjs/react.development";
 import video_frame from "assets/video_frame.png";
+import { useEffect, useRef } from "react";
 
 const images = [
   bach_cang_thang,
@@ -40,6 +41,34 @@ const author = [
 ];
 function Spa() {
   const [show, setShow] = useState({ show: false, img: 0 });
+  const ref = useRef();
+
+  useEffect(() => {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    ref.current.addEventListener("mousedown", (e) => {
+      isDown = true;
+      startX = e.pageX - ref.current.offsetLeft;
+      scrollLeft = ref.current.scrollLeft;
+    });
+
+    ref.current.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+
+    ref.current.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+
+    ref.current.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - ref.current.offsetLeft;
+      const walk = (x - startX) * 3; //scroll-fast
+      ref.current.scrollLeft = scrollLeft - walk;
+    });
+  });
 
   function openImage(number) {
     setShow({ show: true, img: number });
@@ -52,36 +81,61 @@ function Spa() {
     <Room>
       <div className="room Spa">
         <img className="item" src={sauna} alt="Sauna" />
-        <div className="image-container">
+        <div className="image-container" ref={ref}>
           <img
+            draggable={false}
             src={bach_cang_thang}
             alt="Căng Thẳng"
             onClick={() => openImage(0)}
           />
-          <img src={bach_lo_au} alt="Lo Âu" onClick={() => openImage(1)} />
           <img
+            draggable={false}
+            src={bach_lo_au}
+            alt="Lo Âu"
+            onClick={() => openImage(1)}
+          />
+          <img
+            draggable={false}
             src={bach_tram_cam}
             alt="Trầm Cảm"
             onClick={() => openImage(2)}
           />
           <img
+            draggable={false}
             src={linh_cang_thang}
             alt="Căng Thẳng"
             onClick={() => openImage(3)}
           />
-          <img src={linh_lo_au} alt="Lo Âu" onClick={() => openImage(4)} />
           <img
+            draggable={false}
+            src={linh_lo_au}
+            alt="Lo Âu"
+            onClick={() => openImage(4)}
+          />
+          <img
+            draggable={false}
             src={linh_tram_cam}
             alt="Trầm Cảm"
             onClick={() => openImage(5)}
           />
           <img
+            draggable={false}
             src={tam_cang_thang}
             alt="Căng Thẳng"
             onClick={() => openImage(6)}
           />
-          <img src={tam_lo_au} alt="Lo Âu" onClick={() => openImage(7)} />
-          <img src={tam_tram_cam} alt="Trầm Cảm" onClick={() => openImage(8)} />
+          <img
+            draggable={false}
+            src={tam_lo_au}
+            alt="Lo Âu"
+            onClick={() => openImage(7)}
+          />
+          <img
+            draggable={false}
+            src={tam_tram_cam}
+            alt="Trầm Cảm"
+            onClick={() => openImage(8)}
+          />
         </div>
         <Modal show={show.show} handleClose={closeModal}>
           <img className="frame" src={video_frame} alt="Frame" />

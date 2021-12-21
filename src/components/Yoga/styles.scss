@@ -1,4 +1,7 @@
 .Yoga {
+  .item {
+    width: 100%;
+  }
   .Modal {
     .content {
       width: auto;
@@ -10,13 +13,17 @@
   .frame {
     max-height: 100%;
     max-width: 100%;
+
+    @media only screen and (min-width: 1440px) {
+      max-width: 1200px;
+    }
   }
   .player {
     position: absolute;
     top: 50%;
-    transform: translateY(-35%);
+    transform: translateY(-50%);
     left: 5%;
-    height: 75%;
+    height: 60%;
     width: 55%;
   }
   .author {

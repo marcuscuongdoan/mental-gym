@@ -51,7 +51,7 @@ function Movement() {
               }
               config={{ youtube: { layerVars: { showinfo: 1 } } }}
               width={"100%"}
-              height={"calc(9 / 16 * 50vw)"}
+              height={"100%"}
             />
           </div>
           <p className="author">
