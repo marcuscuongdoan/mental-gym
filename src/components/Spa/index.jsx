@@ -25,6 +25,18 @@ const images = [
   tam_lo_au,
   tam_tram_cam,
 ];
+
+const author = [
+  "Trương Xuân Bách",
+  "Trương Xuân Bách",
+  "Trương Xuân Bách",
+  "Liêng Trương Trúc Linh",
+  "Liêng Trương Trúc Linh",
+  "Liêng Trương Trúc Linh",
+  "Nguyễn Thành Minh Tâm",
+  "Nguyễn Thành Minh Tâm",
+  "Nguyễn Thành Minh Tâm",
+];
 function Spa() {
   const [show, setShow] = useState({ show: false, img: 0 });
 
@@ -79,6 +91,7 @@ function Spa() {
             src={images[show.img]}
             alt="Full"
           />
+          <p>{author[show.img]}</p>
         </Modal>
       </div>
     </Room>
