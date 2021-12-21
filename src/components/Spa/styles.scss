@@ -40,6 +40,14 @@
       max-width: 90%;
     }
   }
+  .frame {
+    max-height: 100%;
+    max-width: 100%;
+
+    @media only screen and (min-width: 1440px) {
+      max-width: 1200px;
+    }
+  }
   .photo {
     position: absolute;
     top: 10%;
