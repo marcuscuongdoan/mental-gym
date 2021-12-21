@@ -72,6 +72,13 @@ const lstrings = new LocalizedStrings({
         less: "Are you alright? You should try other rooms!",
       },
     },
+    yogaRoom: {
+      description: "* Yoga by David Patrick Delves",
+    },
+    movementRoom: {
+      mai_anh: "Movement by Le Mai Anh",
+      thanh_toan: "Movement by Doan Thanh Toan",
+    },
   },
   vn: {
     language: "Change to English",
@@ -143,6 +150,13 @@ const lstrings = new LocalizedStrings({
         balance: "Bạn có vẻ cân bằng đó!",
         less: "Bạn có ổn không? Các phòng khác có thể sẽ tốt cho bạn!",
       },
+    },
+    yogaRoom: {
+      description: "* Yoga bởi David Patrick Delves",
+    },
+    movementRoom: {
+      mai_anh: "Chuyển Động bởi Lê Mai Anh",
+      thanh_toan: "Chuyển Động bởi Đoàn Thanh Toàn",
     },
   },
 });

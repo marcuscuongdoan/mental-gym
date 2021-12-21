@@ -5,6 +5,27 @@
   font-family: "Cucho";
   overflow-x: hidden;
   cursor: url("./assets/mouse.png"), auto;
+
+  @media (pointer: fine) {
+    ::-webkit-scrollbar {
+      width: 10px;
+      background-color: #f5f5f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #f90;
+      background-image: -webkit-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+      );
+    }
+  }
 }
 
 .container {
@@ -20,7 +41,6 @@
   z-index: 1;
   bottom: 20px;
   left: 10%;
-  transform: translateX(-50%);
   border-radius: 10px;
   cursor: pointer;
   color: white;
@@ -63,6 +83,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
     width: 20%;
     padding: 5%;
 
@@ -125,7 +146,6 @@
 
     @media only screen and (max-width: 720px) {
       width: 100%;
-      height: calc(9 / 16 * 100vw);
     }
 
     @keyframes unfoldIn {

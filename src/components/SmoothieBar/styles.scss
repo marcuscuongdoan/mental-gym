@@ -1,11 +1,31 @@
-.item-container {
-  justify-content: end;
-}
+.SmoothieBar {
+  .item-container {
+    justify-content: end;
+  }
 
-.poem {
-  padding: 20px;
-  font-family: monospace;
-  div {
-    text-align: left;
+  .Modal .content {
+    width: auto;
+  }
+
+  .poem {
+    position: relative;
+    font-family: monospace;
+    .poem-text {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      text-align: left;
+      overflow-y: auto;
+      width: 70%;
+      height: 75%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .frame {
+    height: 85vh;
+    width: auto;
   }
 }
