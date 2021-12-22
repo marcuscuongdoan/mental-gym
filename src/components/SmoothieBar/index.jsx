@@ -135,7 +135,7 @@ const poems = [
     cardinals creeping into a nest <br />
     sealing behind the false ribs of a father <br /> <br />
     <i>
-      This open first appeared in the micro-chapbook Our Delicates by Tam Nguyen
+      This poem first appeared in the micro-chapbook Our Delicates by Tam Nguyen
       - published by Wintercrearig Project (2020), edited and reprinted on
       Dryland magazine issue 11 (2021)
     </i>
