@@ -12,7 +12,7 @@ import tam_lo_au from "assets/spa/tam_lo_au.jpg";
 import tam_tram_cam from "assets/spa/tam_tram_cam.jpg";
 import Room from "layouts/room";
 import Modal from "components/Modal/Modal";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import video_frame from "assets/video_frame.png";
 import { useEffect, useRef } from "react";
 
@@ -68,6 +68,10 @@ function Spa() {
       const walk = (x - startX) * 3; //scroll-fast
       ref.current.scrollLeft = scrollLeft - walk;
     });
+
+    return () => {
+      ref.current.removeE;
+    };
   });
 
   function openImage(number) {
