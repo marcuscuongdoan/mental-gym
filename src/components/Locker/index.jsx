@@ -1,6 +1,5 @@
 import "./styles.scss";
 import { useState } from "react";
-import ReactPlayer from "react-player";
 import locker_blue from "assets/locker/locker_blue.png";
 import locker_yellow from "assets/locker/locker_yellow.png";
 import Room from "layouts/room";
@@ -42,23 +41,16 @@ function Locker() {
         <Modal show={show} handleClose={() => setShow(false)}>
           <img className="frame" src={video_frame} alt="Frame" />
           <div className="player">
-            <ReactPlayer
-              url={
-                blue
-                  ? "https://www.youtube.com/watch?v=hFfvVBJYOpM"
-                  : "https://www.youtube.com/watch?v=l0pO_zVZA5Iw"
-              }
-              config={{
-                youtube: {
-                  playerVars: {
-                    showinfo: 1,
-                    origin: "https://mental-gym.vercel.app",
-                  },
-                },
-              }}
-              width={"100%"}
-              height={"100%"}
-            />
+            <iframe
+              title="Video"
+              style={{ width: "100%", height: "100%" }}
+              src={(blue
+                ? "https://www.youtube.com/watch?v=hFfvVBJYOpM"
+                : "https://www.youtube.com/watch?v=l0pO_zVZA5I"
+              ).replace("/watch?v=", "/embed/")}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
           </div>
           <p className="author">
             {blue ? lstrings.lockerRoom.john : lstrings.lockerRoom.katherine}

@@ -4,7 +4,6 @@ import movement_1 from "assets/movement/movement_1.png";
 import movement_2 from "assets/movement/movement_2.png";
 import { useState } from "react";
 import Modal from "components/Modal/Modal";
-import ReactPlayer from "react-player";
 import video_frame from "assets/video_frame.png";
 import lstrings from "language";
 
@@ -41,25 +40,18 @@ function Movement() {
         <Modal show={show} handleClose={() => setShow(false)}>
           <img className="frame" src={video_frame} alt="Frame" />
           <div className="player">
-            <ReactPlayer
-              url={
-                blue
-                  ? lstrings.getLanguage() === "vn"
-                    ? "https://www.youtube.com/watch?v=dJV0LpXDcuk"
-                    : "https://www.youtube.com/watch?v=tSGCzSYTq-I"
-                  : "https://www.youtube.com/watch?v=KZm8qHuOaIw"
-              }
-              config={{
-                youtube: {
-                  playerVars: {
-                    showinfo: 1,
-                    origin: "https://mental-gym.vercel.app",
-                  },
-                },
-              }}
-              width={"100%"}
-              height={"100%"}
-            />
+            <iframe
+              title="Video"
+              style={{ width: "100%", height: "100%" }}
+              src={(blue
+                ? lstrings.getLanguage() === "vn"
+                  ? "https://www.youtube.com/watch?v=dJV0LpXDcuk"
+                  : "https://www.youtube.com/watch?v=tSGCzSYTq-I"
+                : "https://www.youtube.com/watch?v=KZm8qHuOaIw"
+              ).replace("/watch?v=", "/embed/")}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
           </div>
           <p className="author">
             {blue

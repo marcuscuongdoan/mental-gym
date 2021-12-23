@@ -6,7 +6,6 @@ import video_frame from "assets/video_frame.png";
 
 import Room from "layouts/room";
 import { useState } from "react";
-import ReactPlayer from "react-player";
 
 function Yoga() {
   const [show, setShow] = useState(false);
@@ -24,19 +23,16 @@ function Yoga() {
         <Modal show={show} handleClose={() => setShow(false)}>
           <img className="frame" src={video_frame} alt="Frame" />
           <div className="player">
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=gGCyEkhV0zw"
-              config={{
-                youtube: {
-                  playerVars: {
-                    showinfo: 1,
-                    origin: "https://mental-gym.vercel.app",
-                  },
-                },
-              }}
-              width={"100%"}
-              height={"100%"}
-            />
+            <iframe
+              title="Video"
+              style={{ width: "100%", height: "100%" }}
+              src={"https://www.youtube.com/watch?v=gGCyEkhV0zw".replace(
+                "/watch?v=",
+                "/embed/"
+              )}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
           </div>
           <p className="author">{lstrings.yogaRoom.description}</p>
         </Modal>

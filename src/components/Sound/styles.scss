@@ -1,0 +1,22 @@
+.Sound {
+  .frame {
+    height: 85vh;
+    width: auto;
+  }
+  .description {
+    position: relative;
+    font-family: monospace;
+    .description-text {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      text-align: left;
+      overflow-y: auto;
+      width: 70%;
+      height: 75%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
