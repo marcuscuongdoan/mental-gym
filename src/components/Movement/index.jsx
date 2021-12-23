@@ -49,7 +49,14 @@ function Movement() {
                     : "https://www.youtube.com/watch?v=tSGCzSYTq-I"
                   : "https://www.youtube.com/watch?v=KZm8qHuOaIw"
               }
-              config={{ youtube: { layerVars: { showinfo: 1 } } }}
+              config={{
+                youtube: {
+                  playerVars: {
+                    showinfo: 1,
+                    origin: "https://mental-gym.vercel.app",
+                  },
+                },
+              }}
               width={"100%"}
               height={"100%"}
             />

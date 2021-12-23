@@ -48,7 +48,14 @@ function Locker() {
                   ? "https://www.youtube.com/watch?v=hFfvVBJYOpM"
                   : "https://www.youtube.com/watch?v=l0pO_zVZA5Iw"
               }
-              config={{ youtube: { layerVars: { showinfo: 1 } } }}
+              config={{
+                youtube: {
+                  playerVars: {
+                    showinfo: 1,
+                    origin: "https://mental-gym.vercel.app",
+                  },
+                },
+              }}
               width={"100%"}
               height={"100%"}
             />
