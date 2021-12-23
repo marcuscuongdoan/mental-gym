@@ -47,30 +47,34 @@ function Spa() {
     let isDown = false;
     let startX;
     let scrollLeft;
-    ref.current.addEventListener("mousedown", (e) => {
+    const current = ref.current;
+
+    const onMouseDown = (e) => {
       isDown = true;
-      startX = e.pageX - ref.current.offsetLeft;
-      scrollLeft = ref.current.scrollLeft;
-    });
-
-    ref.current.addEventListener("mouseleave", () => {
+      startX = e.pageX - current.offsetLeft;
+      scrollLeft = current.scrollLeft;
+    };
+    const onMouseLeaveAndUp = () => {
       isDown = false;
-    });
-
-    ref.current.addEventListener("mouseup", () => {
-      isDown = false;
-    });
-
-    ref.current.addEventListener("mousemove", (e) => {
+    };
+    const onMouseMove = (e) => {
       if (!isDown) return;
       e.preventDefault();
-      const x = e.pageX - ref.current.offsetLeft;
+      const x = e.pageX - current.offsetLeft;
       const walk = (x - startX) * 3; //scroll-fast
-      ref.current.scrollLeft = scrollLeft - walk;
-    });
+      current.scrollLeft = scrollLeft - walk;
+    };
+
+    current.addEventListener("mousedown", onMouseDown);
+    current.addEventListener("mouseleave", onMouseLeaveAndUp);
+    current.addEventListener("mouseup", onMouseLeaveAndUp);
+    current.addEventListener("mousemove", onMouseMove);
 
     return () => {
-      ref.current.removeE;
+      current.removeEventListener("mousedown", onMouseDown);
+      current.removeEventListener("mouseleave", onMouseLeaveAndUp);
+      current.removeEventListener("mouseup", onMouseLeaveAndUp);
+      current.removeEventListener("mousemove", onMouseMove);
     };
   });
 
