@@ -2,7 +2,7 @@ import LocalizedStrings from "react-localization";
 
 const lstrings = new LocalizedStrings({
   en: {
-    language: "Chuyển sang Tiếng Việt",
+    language: "VN",
     intro: "Welcome to Mental Gym!",
     art: "Art",
     locker: "Locker",
@@ -85,7 +85,7 @@ const lstrings = new LocalizedStrings({
     },
   },
   vn: {
-    language: "Change to English",
+    language: "EN",
     intro: "Chào mừng bạn đến với Phòng Tập Tinh Thần!",
     art: "Phòng Vẽ",
     locker: "Phòng Khóa",
