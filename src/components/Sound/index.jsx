@@ -63,10 +63,10 @@ function Sound() {
       <div className="room Sound">
         <div className="row">
           <div className="item-container">
-            <img className="item" src={yoda} alt="Yoda" onClick={openModal} />
+            <img className="item" src={yoda} alt="Yoda" onClick={playAudio} />
           </div>
           <div className="item-container">
-            <img className="item" src={ear} alt="Ear" onClick={playAudio} />
+            <img className="item" src={ear} alt="Ear" onClick={openModal} />
           </div>
           <div className="item-container">
             <img
