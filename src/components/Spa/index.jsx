@@ -88,62 +88,64 @@ function Spa() {
   return (
     <Room>
       <div className="room Spa">
-        <img className="item" src={sauna} alt="Sauna" />
-        <div className="image-container" ref={ref}>
-          <img
-            draggable={false}
-            src={bach_cang_thang}
-            alt="Căng Thẳng"
-            onClick={() => openImage(0)}
-          />
-          <img
-            draggable={false}
-            src={bach_lo_au}
-            alt="Lo Âu"
-            onClick={() => openImage(1)}
-          />
-          <img
-            draggable={false}
-            src={bach_tram_cam}
-            alt="Trầm Cảm"
-            onClick={() => openImage(2)}
-          />
-          <img
-            draggable={false}
-            src={linh_cang_thang}
-            alt="Căng Thẳng"
-            onClick={() => openImage(3)}
-          />
-          <img
-            draggable={false}
-            src={linh_lo_au}
-            alt="Lo Âu"
-            onClick={() => openImage(4)}
-          />
-          <img
-            draggable={false}
-            src={linh_tram_cam}
-            alt="Trầm Cảm"
-            onClick={() => openImage(5)}
-          />
-          <img
-            draggable={false}
-            src={tam_cang_thang}
-            alt="Căng Thẳng"
-            onClick={() => openImage(6)}
-          />
-          <img
-            draggable={false}
-            src={tam_lo_au}
-            alt="Lo Âu"
-            onClick={() => openImage(7)}
-          />
-          <img
-            draggable={false}
-            src={tam_tram_cam}
-            alt="Trầm Cảm"
-            onClick={() => openImage(8)}
-          />
+        <div className="main-spa">
+          <img className="item" src={sauna} alt="Sauna" />
+          <div className="image-container" ref={ref}>
+            <img
+              draggable={false}
+              src={bach_cang_thang}
+              alt="Căng Thẳng"
+              onClick={() => openImage(0)}
+            />
+            <img
+              draggable={false}
+              src={bach_lo_au}
+              alt="Lo Âu"
+              onClick={() => openImage(1)}
+            />
+            <img
+              draggable={false}
+              src={bach_tram_cam}
+              alt="Trầm Cảm"
+              onClick={() => openImage(2)}
+            />
+            <img
+              draggable={false}
+              src={linh_cang_thang}
+              alt="Căng Thẳng"
+              onClick={() => openImage(3)}
+            />
+            <img
+              draggable={false}
+              src={linh_lo_au}
+              alt="Lo Âu"
+              onClick={() => openImage(4)}
+            />
+            <img
+              draggable={false}
+              src={linh_tram_cam}
+              alt="Trầm Cảm"
+              onClick={() => openImage(5)}
+            />
+            <img
+              draggable={false}
+              src={tam_cang_thang}
+              alt="Căng Thẳng"
+              onClick={() => openImage(6)}
+            />
+            <img
+              draggable={false}
+              src={tam_lo_au}
+              alt="Lo Âu"
+              onClick={() => openImage(7)}
+            />
+            <img
+              draggable={false}
+              src={tam_tram_cam}
+              alt="Trầm Cảm"
+              onClick={() => openImage(8)}
+            />
+          </div>
         </div>
         <Modal show={show.show} handleClose={closeModal}>
           <img className="frame" src={video_frame} alt="Frame" />
