@@ -87,7 +87,7 @@ function Spa() {
   }
   return (
     <Room>
-      <div className="room Spa">
+      <div className="room no-background Spa">
         <div className="main-spa">
           <img className="item" src={sauna} alt="Sauna" />
           <div className="image-container" ref={ref}>

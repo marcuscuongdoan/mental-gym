@@ -251,8 +251,8 @@ function Theatre() {
 
   return (
     <Room>
-      <div className="room">
-        <div className="theatre">
+      <div className="room no-background">
+        <div className="Theatre">
           <img className="stage" src={stage} alt="Stage" />
           {body !== initialBody ? (
             <div className="full-body">

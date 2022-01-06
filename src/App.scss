@@ -80,6 +80,14 @@
   max-width: 1110px;
   height: 100vh;
   position: relative;
+  background-image: url("assets/menu/logo.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  &.no-background {
+    background: none;
+  }
 
   .row {
     padding-top: 10%;

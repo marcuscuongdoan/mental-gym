@@ -1,4 +1,4 @@
-.theatre {
+.Theatre {
   width: 100vw;
   max-width: 1110px;
   height: calc(335 / 600 * 100vw);
@@ -7,6 +7,7 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   overflow: hidden;
+  background: none;
 
   img {
     width: 100%;
